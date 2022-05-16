@@ -1,0 +1,111 @@
+.profileContainer {
+    margin-top: 80px;
+    padding: 50px;
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*User profile*/
+.adminProfileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55vw;
+    max-width: 600px;
+}
+
+.profilePageTitle {
+    color: rgba(37, 116, 169, 1);
+    font-weight: 700;
+}
+
+.profileData {
+    width: 80%;
+}
+
+/*User profile*/
+.adminProfileData {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dataFieldWrap  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 48%;
+    border-radius: 5px;
+    border: 1px solid rgba(37, 116, 169, 1);
+    background: rgba(37, 116, 169, 0.2);
+    margin-bottom: 10px;
+}
+
+.labelIcon, .dataField {
+    padding: 5px;
+}
+
+.labelIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    color: rgba(37, 116, 169, 1);
+}
+
+.dataField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: #ffffff;
+    width: 85%;
+    border-radius: 0 5px 5px 0;
+}
+
+.dataField * {
+    font-weight: 200;
+}
+
+.userTypeData {
+    text-transform: capitalize;
+}
+
+.label {
+    color: gray;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+
+    /*User profile*/
+    .adminProfileContainer {
+        width: calc(100vw - 100px);
+        max-width: 600px;
+    }
+
+    .profileContainer {
+        padding: 20px;
+    }
+
+    .profileData {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .dataFieldWrap  {
+        width: 100%;
+    }
+}
